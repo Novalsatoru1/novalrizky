@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Pemrograman Web</title>
+        <style>
+            .container {
+                background-color: aqua;
+            }
+
+            .menu {
+                text-align: center;
+                font-size: 18px;
+                padding-top: 10pt;
+            }
+            .button {
+                background-color: darkblue;
+                padding: 5px;
+                border-color: black;
+                text-decoration: none;
+            }
+            .button:hover {
+                background-color: red;
+            }
+        </style>
+        </head>
+        <body>
+            <div class="container">
+            <h2 align="center">Quiz Pemrograman Web</h2>
+        <div class="menu" >
+            <a href="index.html" class="button">Home</a>
+            <a href="list_jurusan.html" class="button">List Jurusan</a>
+            <a href="input_data.html" class="button">Input Data</a>
+            <a href="tampil_data.html" class="button">Tampil Tabel</a>
+            <a href="about.html" class="button">About</a>
+        </div>
+        </div>
+<hr>
+<form action="submit.php" method="post">
+    <fieldset>
+    <legend>Rental Kendaraan</legend>
+    <table>
+        <tr>
+            <td>No.Identitas</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Nama Lengkap</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>No.Hp</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td><textarea name="Alamat" id="" cols="21" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Jenis Kendaraan</td>
+            <td>
+                <select name="Jenis Kendaraan">
+                    <option value="Lamborgini">Lamborgini</option>
+                    <option value="Ferari">Ferari</option>
+                    <option value="Bugati">Bugati</option>
+                    <option value="BMW">BMW</option>
+                    <option value="GTR">Nissan GTR</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Tipe Layanan</td>
+            <td>
+                <input type="radio" name="Tipe Layanan" value="Lepas Kunci"
+        />Lepas Kunci
+                <input type="radio" name="Tipe Layanan" value="Dengan Supir"
+        />Dengan Supir
+            </td>
+        </tr>
+        <tr>
+            <td>Tanggal Sewa</td>
+            <td><input type="date" name="Tangal Sewa" /> s/d 
+                <input type="date" name="Tangal Sewa" />
+            </td>
+        </tr>
+        <tr>
+            <td><br></td>
+            <td>
+                <input type="submit" name="save" value="Submit">
+                <input type="reset" name="BntBatal" value="Batal">
+            </td>
+        </tr>
+            
+    </table>
+    </fieldset>
+</form>
+
+</body>
+</html>
